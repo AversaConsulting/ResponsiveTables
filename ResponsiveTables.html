@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Responsive Headers</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.7.2/dist/js/uikit-icons.min.js"></script>
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <div class="uk-section">
+        <div class="uk-container">
+
+            <h1>Standard Table</h1>
+            <p>Automatically show all columns stacked and take captions from the th elements</p>
+            <table class="uk-table uk-table-striped av-table-responsive">
+                <thead>
+                    <tr>
+                        <th>Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                        <th>Header 4</th>
+                        <th>Header 5</th>
+                        <th>Header 6</th>
+                        <th>Header 7</th>
+                        <th>Header 8</th>
+                        <th>Header 9</th>
+                        <th>Header 10</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td>Item 10</td>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td>Item 10</td>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td>Item 10</td>
+                </tr>
+
+            </table>
+
+
+            <h1>Header Data Attributes</h1>
+            <p>Automatically show all columns stacked and take captions from data-label attributes, falling back to the th elements</p>
+            <table class="uk-table uk-table-striped av-table-responsive">
+                <thead>
+                    <tr>
+                        <th data-label="I'm more important">Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                        <th>Header 4</th>
+                        <th>Header 5</th>
+                        <th>Header 6</th>
+                        <th>Header 7</th>
+                        <th>Header 8</th>
+                        <th>Header 9</th>
+                        <th data-label="And me!">Header 10</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td>Item 10</td>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td>Item 10</td>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td>Item 10</td>
+                </tr>
+
+            </table>
+
+            <h1>Row Data Attributes</h1>
+            <p>Automatically show all columns stacked and take captions from data-label attributes in each row, falling back header data-lable and then to the th elements</p>
+            <table class="uk-table uk-table-striped av-table-responsive">
+                <thead>
+                    <tr>
+                        <th data-label="I'm a bit less important">Header 1</th>
+                        <th>Header 2</th>
+                        <th>Header 3</th>
+                        <th>Header 4</th>
+                        <th>Header 5</th>
+                        <th>Header 6</th>
+                        <th>Header 7</th>
+                        <th>Header 8</th>
+                        <th>Header 9</th>
+                        <th data-label="And me!">Header 10</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td data-label="I'm a bit more important">Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td>Item 10</td>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td data-label="And me - I'm more important!">Item 10</td>
+                </tr>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Item 2</td>
+                    <td>Item 3</td>
+                    <td>Item 4</td>
+                    <td>Item 5</td>
+                    <td>Item 6</td>
+                    <td>Item 7</td>
+                    <td>Item 8</td>
+                    <td>Item 9</td>
+                    <td>Item 10</td>
+                </tr>
+
+            </table>
+
+        </div>
+    </div>
+    
+    <script>
+        setupResponsiveTables();
+    </script>
+</body>
+</html>
